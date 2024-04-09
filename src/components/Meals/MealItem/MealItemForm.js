@@ -9,7 +9,7 @@ function MealItemForm (props){
 const addItemtoCart = (event)=>{
     event.preventDefault();
 
-    const Item = {Item: props.item, Quentity: InputRef.current.value }
+    const Item = {id: Math.random(),Item: props.item, Quentity: InputRef.current.value }
     ctx.addItem(Item)
 
 }
